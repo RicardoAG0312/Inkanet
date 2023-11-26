@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=Montserrat&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=Montserrat:wght@400;700&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Geologica:wght@300&family=Lora&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dela+Gothic+One&family=Geologica:wght@300&family=Lora&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    width: 15px; 
+}
+body::-webkit-scrollbar-track {
+    background-color: rgba(220, 220, 220, 0.2);
+    background-color: #2a2a2a;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #02ADAE;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+@font-face {
+    font-family: 'Mi Fuente';
+    src: url('../fuentes/Franklin\ Gothic\ Extra\ Condensed.ttf') format('truetype');
+}
+/* Barra de navegacion */
+.barra-nav{
+    background-color: rgba(220, 220, 220, 0.2);
+    border-bottom: 1px solid #0CABAE;
+    height: 80px;
+}
+.barra-nav a{
+    font-family: 'Zilla Slab';
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.369);
+}
+.navbar{
+    margin-top: 0;
+    padding: 0;
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    transition: top 0.5s ease;
+    -webkit-transition: top 0.5s ease;
+    -moz-transition: top 0.5s ease;
+    -ms-transition: top 0.5s ease;
+    -o-transition: top 0.5s ease;
+    z-index: 9999;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+.nav-link::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.dropdown-item::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.dropdown-item:active{
+    background-color: #2a2a2a;
+}
+/* Seccion Nosotros */
+/* Titulo Principal */
+.titulo-principal{
+    font-family: "Mi Fuente";
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #0CABAE;
+    margin: 0px;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.2);
+}
+.titulo-principal::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+/* Seccion Links */
+.sect-links{
+    background-color: #0CABAE;
+    margin: 0;
+    padding: 15px;
+}
+.sect-row{
+    margin: 0px;
+}
+.sect-row .texto{
+    font-size: 36px;
+    font-family: "Mi Fuente";
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.sect-row .texto::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.sect-row .texto:hover{
+    text-shadow: 2px 2px 2px black;
+}
+.titulo-an{
+    margin: 20px 0px;
+    padding: 20px 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 33px;
+    color: #323e48;
+}
+.sect-an li{
+    margin: 10px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212529;
+}
+.titulo-an span{
+    display: block;
+    background-color: #0CABAE;
+    width: 100px;
+    height: 10px;
+    margin: 10px 0;
+}
+/* Seccion Historia */
+.sect-historia{
+    width: 100%;
+    max-height: 514px;
+    background-color: rgba(220, 220, 220, 0.2);
+}
+.sect-historia header::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.sect-historia p::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.sect-historia .texto{
+    margin: 0;
+    padding: 10px 25px;
+}
+.sect-historia .texto p{
+    line-height: 25px;
+    font-size: 16px;
+}
+.titulo-sec{
+    margin: 0;
+    padding: 20px 0px;
+    text-align: left;
+    color: #0CABAE;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Mi Fuente";
+}
+.sect-historia .imagen{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/ciberseguridad.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Seccion Proposito */
+.sect-proposito{
+    width: 100%;
+    max-height: 100%;
+    background-color: rgba(220, 220, 220, 0.2);
+}
+.sect-proposito .texto{
+    margin: 0;
+    padding: 10px 25px;
+}
+.sect-proposito .texto p{
+    line-height: 25px;
+    font-size: 16px;
+}
+.sect-proposito .imagen{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/ciberseguridad.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sect-proposito header::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.sect-proposito p::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.sect-proposito h5::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+/* Seccion Estadistica */
+.sect-es{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    height: 450px;
+    background-color: #2e2e2e;
+    box-shadow: 0 0 20px gray;
+}
+.sect-firts, .sect-sec{
+    height: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+.sect-col-firts, .sect-col-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+.sect-es .icono{
+    font-size: 60px;
+    color: #0CABAE;
+    padding: 10px 0px;
+    text-align: right;
+    margin: 0px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.sect-es .icono:hover{
+    font-size: 100px;
+}
+.sect-es .texto{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px;
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    margin: 0px;
+}
+.sect-es .texto::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+/* Seccion Principios */
+.seccion-principios{
+    width: 100%;
+    max-height: 800px;
+    margin: auto;
+    padding: 20px;
+    border-top: 2px solid #0CABAE;
+    background-color: rgba(220, 220, 220, 0.2);
+}
+.seccion-principios .titulo-an{
+    margin: 10px 0;
+    padding: 20px 12px;
+    font-family: "Mi Fuente";
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 33px;
+    color: #2e2e2e;
+    text-transform: uppercase;
+}
+.seccion-principios .titulo-an::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.overlay{
+    transition: all 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: 'Monsetrrat';
+}
+.card{
+    position: relative;
+    border: 1px solid #0CABAE;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.card-body{
+    background-color: #2e2e2e;
+    color: white;
+}
+.card:hover img{
+    opacity: 0.2;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover{
+    outline: 5px ridge #0CABAE;
+    box-shadow: 0 0 15px gray;
+}
+.seccion-principios p::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+/* Pie de Pagina */
+.diseño img{
+    width: 100%;
+    border: none;
+    margin: 0; 
+}
+footer{
+    background-color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer img{
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+.texto-footer{
+    max-width: 300px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+.texto-footer::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.derechos-de-autor::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;  
+}
+.iconos-redes-sociales i{
+    font-size: 35px;
+    margin: 0 10px;
+    color: #0CABAE;
+}
+.iconos-redes-sociales a:hover i{
+    color: rgb(220, 220, 220);
+}
+/* Responsivos Medias Querys */
+/* Barra de navegación */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-collapse{
+        background-color: rgb(220, 220, 220);
+        padding: 10px 0px;
+    }
+    .barra-nav{
+        padding: 0;
+    }
+    .barra-nav img{
+        margin-right: 10px;
+    }
+    .barra-nav button{
+        margin-left: 10px;
+    }
+}
+/* Seccion Historia */
+@media screen and (max-width: 768px) {
+    .sect-historia header{
+        font-size: 35px;
+        text-align: center;
+    }
+    .sect-historia p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-historia{
+        max-height: 850px;
+    }
+    .sect-historia .imagen{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 576px) {
+    .sect-historia header{
+        font-size: 35px;
+        text-align: center;
+    }
+    .sect-historia p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-historia{
+        max-height: 850px;
+    }
+    .sect-historia .imagen{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 430px) {
+    .sect-historia header{
+        font-size: 35px;
+        text-align: center;
+    }
+    .sect-historia p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-historia{
+        max-height: 850px;
+    }
+    .sect-historia .imagen{
+        visibility: hidden;
+    }
+}
+/* Seccion Proposito */
+@media screen and (max-width: 768px) {
+    .sect-proposito header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-proposito p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-proposito{
+        max-height: 850px;
+    }
+    .sect-proposito .imagen{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 576px) {
+    .sect-proposito header{
+        font-size: 35px;
+        text-align: center;
+    }
+    .sect-proposito p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-proposito{
+        max-height: 850px;
+    }
+    .sect-proposito .imagen{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 430px) {
+    .sect-proposito header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-proposito p{
+        font-size: 18px;
+        line-height: 16px;
+        text-align: justify;
+    }
+    .sect-proposito{
+        max-height: 1300px;
+    }
+    .sect-proposito .imagen{
+        visibility: hidden;
+    }
+}
+/* Seccion Estadistica */
+@media screen and (max-width: 768px) {
+    .sect-es .texto{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .sect-es i{
+        font-size: 50px;
+    }
+    .sect-firts{
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .sect-es .texto{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .sect-es i{
+        font-size: 25px;
+    }
+    .sect-col-sec .icono{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect-col-firts .icono{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect-col-sec{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .sect-es .texto{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .sect-es i{
+        font-size: 25px;
+    }
+    .sect-col-sec .icono{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect-col-firts .icono{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sect-col-sec{
+        padding: 0 30px;
+    }
+}
+/* Seccion Principios */
+@media screen and (max-width: 768px) {
+    .seccion-principios .caja{
+        padding: 0;
+    }
+    .seccion-principios .caja .card p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .seccion-principios .card{
+        position: relative;
+    }
+    .seccion-principios .caja .overlay{
+        position: absolute;
+        top: 13%;
+        width: 100%;
+        left: 49%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .seccion-principios .caja{
+        padding: 0;
+    }
+    .seccion-principios .caja .card p{
+        width: 100%;
+        font-size: 12px;
+        height: 40%;
+        line-height: 20px;
+        text-align: center;
+        font-family: "Monsetrrat";
+    }
+    .seccion-principios .card{
+        position: relative;
+    }
+    .seccion-principios .caja .overlay{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        left: 49%;
+    }
+    .seccion-principios .caja .card .overlay p{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 445px) {
+    .seccion-principios .caja{
+        padding: 0;
+    }
+    .seccion-principios .caja .card p{
+        width: 100%;
+        height: 100%;
+        font-size: 10px;
+        line-height: 16px;
+        font-family: "Monsetrrat";
+    }
+    .seccion-principios .card{
+        position: relative;
+    }
+    .seccion-principios .caja .overlay{
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        left: 50%;
+    }
+    .seccion-principios .caja .card-text{
+        height: 5%;
+    }
+    .seccion-principios .caja .card .overlay p{
+        font-size: 6px;
+        text-transform: uppercase;
+    }
+}
+@media screen and (max-width: 430px) {
+    .seccion-principios{
+        height: auto;
+        padding: 20px 10px;
+    }
+    .seccion-principios .caja {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .seccion-principios .caja .card{
+        width: 45%;
+        height: 300px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .seccion-principios .caja .card img{
+        height: 50%;
+    }
+    .seccion-principios .caja .overlay{
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        left: 50%;
+    }
+    .seccion-principios .caja .card-text{
+        height: 5%;
+    }
+    .seccion-principios .caja .card .overlay p{
+        font-size: 14px;
+    }
+    .seccion-principios .caja .card p{
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        line-height: 14px;
+        font-family: "Monsetrrat";
+    }
+}
