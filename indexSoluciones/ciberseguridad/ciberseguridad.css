@@ -116,88 +116,69 @@ body::-webkit-scrollbar-thumb {
 .sect-sec{
     margin: 0;
     padding: 25px 50px;
-    width: 100%;
+    max-width: 100%;
     background-color: #02ADAE;
-    height: auto;
-}
-.sect-sec .col-xl-5 h1::selection{
-    color: #02ADAE;
-    background-color: #2a2a2a;
-}
-.sect-sec .col-xl-5 h2::selection{
-    color: #02ADAE;
-    background-color: #2a2a2a;
-}
-.sect-sec .col-xl-5 p::selection{
-    color: #02ADAE;
-    background-color: #2a2a2a;
+    height: 650px;
 }
 .sect-sec .row{
-    margin: 0;
-    padding: 10px;
-    text-align: center;
+    margin: 50px auto;
+    padding: 0;
+    height: 520PX;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.sect-sec .row .contenedor-info {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.sect-sec .col-xl-5{
-    height: 250px;
-    margin: 0;
-    padding: 20px 0;
-    background:  url(../../images/data.jpg);
+.sect-sec .row .contenedor-img {
+    background-image: url(../../images/ciber.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
-    position: relative;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    height: 100%;
+}
+.sect-sec .row .contenedor-info {
+    padding: 20px;
+}
+.sect-sec .row .contenedor-info h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.sect-sec .row .contenedor-info li {
+    list-style: disc;
+}
+ul {
+    padding: 20px;
+}
+/* OffCanva */
+.contenedor-off{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
-.sect-sec .col-xl-5:hover{
-    box-shadow: 0 0 15px white;
+.contenedor-off .col img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
-.sect-sec .col-xl-5:hover{
-    background: rgba(0, 0, 0, 0.8);
-}
-.sect-sec .col-xl-5 h1{
-    font-family: "Mi Fuente";
-    text-transform: uppercase;
-    color: white;
-    font-size: 65px;
-    margin: 0 20px;
-}
-.sect-sec .col-xl-5 h2{
-    font-family: "Mi Fuente";
-    text-transform: uppercase;
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 10%;
-    margin: 0 20px;
-    visibility: hidden;
-}
-.sect-sec .col-xl-5 p{
-    font-size: 18px;
-    line-height: 24px;
-    color: white;
-    text-align: justify;
-    margin:  20px;
-    position: absolute;
-    top: 25%;
-    visibility: hidden;
-}
-.sect-sec .col-xl-5:hover p{
-    visibility: visible;
-}
-.sect-sec .col-xl-5:hover h2{
-    visibility: visible;
-}
-.sect-sec .col-xl-5:hover h1{
-    visibility: hidden;
+.offcanvas-body.small.row.contenedor-off {
+    margin: 0 !important;
 }
 /* Pie de Pagina */
 footer{

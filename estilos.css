@@ -73,6 +73,17 @@ body::-webkit-scrollbar-thumb {
 .dropdown-item:active{
     background-color: #2a2a2a;
 }
+/* Particulas */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background-color: transparent;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
 /* Presentacion Carrusel Principal  */
 .sect-principal{
     width: 100%;
@@ -174,6 +185,15 @@ body::-webkit-scrollbar-thumb {
 .seleccionado{
     background-color: rgb(220, 220, 220);
 }
+/* Video */
+.contenedor-video {
+    min-height: 500px;
+    padding: 20px;
+    padding-top: 60px;
+}
+.contenedor-video video {
+    width: 100%;
+}
 /* Seccion Servicios  */
 .sect-servicios{
     margin: 0;
@@ -252,77 +272,6 @@ body::-webkit-scrollbar-thumb {
     color: #02ADAE;
     background-color: #2a2a2a;
 }
-/*  Seccion Colaborador */
-.sect-colaborador{
-    width: 100%;
-    height: 400px;
-    margin: 0;
-    padding: 0;
-}
-.sect-colaborador .row{
-    margin: 0;
-}
-.sect-colaborador .texto{
-    background-color: rgba(220, 220, 220, 0.2);
-    height: 400px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.sect-colaborador header{
-    font-family: "Mi Fuente";
-    color: #02ADAE;
-    font-size: 70px;
-    text-transform: uppercase;
-    line-height: 70px;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-.sect-colaborador header::selection{
-    color: #02ADAE;
-    background-color: #2a2a2a;
-}
-.sect-colaborador p{
-    font-size: 18px;
-    text-align: center;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    width: 60%;
-}
-.sect-colaborador p::selection{
-    color: #02ADAE;
-    background-color: #2a2a2a;
-}
-.sect-colaborador a{
-    margin: 0;
-    padding: 10px;
-    text-decoration: none;
-    background-color: #0CABAE;
-    color: white;
-    font-weight: bolder;
-    text-transform: uppercase;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.sect-colaborador a::selection{
-    color: #02ADAE;
-    background-color: #2a2a2a;
-}
-.sect-colaborador .img{
-    background-color: #02ADAE;
-    height: 400px;
-    padding: 30px;
-    margin: 0;
-}
-.sect-colaborador img{
-    width: 100%;
-    height: 100%;
-}
 /* Seccion de Clientes */
 .titulo-principal{
     margin: 0;
@@ -364,7 +313,7 @@ body::-webkit-scrollbar-thumb {
 .titulo-con-lineas::after {
     right: 0;
 }
-.seccion-clientes .row:nth-child(even){
+.seccion-clientes .row:nth-child(even){ 
     background: #2a2a2a;
     color: white;
     text-align: right;
@@ -628,6 +577,12 @@ footer img{
     }
     .sect-principal .row .imagen{
         visibility: hidden;
+    }
+}
+/* Video */
+@media screen and (max-width: 420px) {
+    .contenedor-video {
+        min-height: auto;
     }
 }
 /* Seccion Servicios */

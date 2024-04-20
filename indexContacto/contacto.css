@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=Montserrat&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=Montserrat:wght@400;700&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Geologica:wght@300&family=Lora&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dela+Gothic+One&family=Geologica:wght@300&family=Lora&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    width: 15px; 
+}
+body::-webkit-scrollbar-track {
+    background-color: rgba(220, 220, 220, 0.2);
+    background-color: #2a2a2a;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #02ADAE;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+@font-face {
+    font-family: 'Mi Fuente';
+    src: url('../fuentes/Franklin\ Gothic\ Extra\ Condensed.ttf') format('truetype');
+}
+/* Barra de navegacion */
+.barra-nav{
+    background-color: rgba(220, 220, 220, 0.2);
+    border-bottom: 1px solid #0CABAE;
+    height: 80px;
+}
+.barra-nav a{
+    font-family: 'Zilla Slab';
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.369);
+}
+.navbar{
+    margin-top: 0;
+    padding: 0;
+    position: sticky;
+    top: 0px;
+    height: 80px;
+    transition: top 0.5s ease;
+    -webkit-transition: top 0.5s ease;
+    -moz-transition: top 0.5s ease;
+    -ms-transition: top 0.5s ease;
+    -o-transition: top 0.5s ease;
+    z-index: 9999;
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+.nav-link::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.dropdown-item::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.dropdown-item:active{
+    background-color: #2a2a2a;
+}
+/* Seccion Formulario */
+form {
+    width: 300px;
+    margin: 20px auto;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    max-height: 65px;
+}
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    max-height: 65px;
+}
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    max-height: 65px;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #2B2B2B;
+    outline: 2px solid #05AEAF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #05AEAF;
+    outline: 2px solid #2B2B2B;
+}
+.row {
+    padding: 0;
+    margin: 0;
+}
+/* Pie de Pagina */
+.diseño img{
+    width: 100%;
+    border: none;
+    margin: 0; 
+}
+footer{
+    background-color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+footer img{
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+.texto-footer{
+    max-width: 300px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+.texto-footer::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;
+}
+.derechos-de-autor::selection{
+    color: #02ADAE;
+    background-color: #2a2a2a;  
+}
+.iconos-redes-sociales i{
+    font-size: 35px;
+    margin: 0 10px;
+    color: #0CABAE;
+}
+.iconos-redes-sociales a:hover i{
+    color: rgb(220, 220, 220);
+}
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-collapse{
+        background-color: rgb(220, 220, 220);
+        padding: 10px 0px;
+    }
+    .barra-nav{
+        padding: 0;
+    }
+    .barra-nav img{
+        margin-right: 10px;
+    }
+    .barra-nav button{
+        margin-left: 10px;
+    }
+}
+

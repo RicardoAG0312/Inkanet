@@ -32,3 +32,5 @@ let flechaIzquierda = () => {
     mostrarImagenes(); //Llamos la funcion mostrarImagenes
 }
 document.getElementById("flecha-izq").addEventListener("click", flechaIzquierda) //Asignas el evento
+
+setInterval(flechaDerecha, 1000);
