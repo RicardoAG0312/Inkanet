@@ -23,6 +23,32 @@ body::-webkit-scrollbar-thumb {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
 }
+/* Boton Whatsapp */
+.boton-whatsapp {
+    width: 30px;
+    height: 30px;
+    background-color: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 25px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.boton-whatsapp a {
+    text-decoration: none;
+    color: white;
+}
+.boton-whatsapp i {
+    font-size: 35px;
+}
+
 /* Barra de navegacion */
 .barra-nav{
     background-color: rgba(220, 220, 220, 0.2);
@@ -179,6 +205,11 @@ ul {
     margin: 0 !important;
 }
 /* Pie de Pagina */
+.diseño img{
+    width: 100%;
+    border: none;
+    margin: 0; 
+}
 footer{
     background-color: #2a2a2a;
     border-top: 1px solid #0CABAE;
@@ -216,7 +247,6 @@ footer img{
     color: rgb(220, 220, 220);
 }
 /* Responsivos Medias Querys */
-/* Barra de navegación */
 @media screen and (max-width: 768px) {
     .navbar-nav {
         display: none;
@@ -238,46 +268,18 @@ footer img{
 /* Titulo Principal */
 @media screen and (max-width: 768px) {
     .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 30%;
-    }
-    .sect-sec{
-        max-height: 1200px;
-    }
-}
-@media screen and (max-width: 576px) {
-    .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 20%;
-    }
-}
-@media screen and (max-width: 445px) {
-    .titulo-con-lineas::before, .titulo-con-lineas::after {
         width: 15%;
     }
     .sect-sec{
-        max-height: 1200px;
+        height: auto;
     }
-    .sect-sec .col-xl-5 h1{
-        font-size: 45px;
+    .sect-sec .row{
+        margin: 50px auto;
+        padding: 0;
+        height: auto;
     }
-    .sect-sec .col-xl-5 h2{
-        font-size: 25px;
-    }
-    .sect-sec .col-xl-5 p{
-        font-size: 14px;
-        line-height: 20px;
-        margin:  20px;
-    }
-}
-@media screen and (max-width: 430px) {
-    .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 20%;
-    }
-    .titulo-principal{
-        font-size: 50px;
-    }
-    .titulo-principal .text{
-        font-size: 100px;
-        padding: 20px 10px;
+    .sect-sec .row .contenedor-img {
+        display: none;
     }
 }
 

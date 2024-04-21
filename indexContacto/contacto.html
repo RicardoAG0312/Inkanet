@@ -64,16 +64,16 @@
         <section class="container-fluid p-0">
             <div class="row">
                 <div class="col-12 col-lg-4">
-                    <form action="" method="POST">
+                    <form action="" method="POST" id="formulario">
                         <label for="name">Nombre:</label><br>
-                        <input type="text" id="fname" name="name" placeholder="Ingresa tu nombre" required="true"><br>
+                        <input type="text" id="nombre" name="name" placeholder="Ingresa tu nombre" required="true"><br>
                         <label for="email">Email:</label><br>
-                        <input type="email" id="lname" name="email" placeholder="Ingresa tu email" required="true"><br>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu email" required="true"><br>
                         <label for="number">Teléfono:</label><br>
-                        <input type="number" id="lname" name="number" placeholder="Ingresa tu celular" required="true"><br>
+                        <input type="number" id="celular" name="number" placeholder="Ingresa tu celular" required="true"><br>
                         <label for="lname">Mensaje:</label><br>
-                        <textarea id="lname" name="lname" placeholder="Escribe un comentario" required="true" style="resize: none"></textarea><br><br>
-                        <input type="submit" value="Enviar">
+                        <textarea id="lname" name="comentario" placeholder="Escribe un comentario" required="true" style="resize: none"></textarea><br><br>
+                        <input type="submit" value="Enviar" onclick="enviarDatos(event)">
                     </form>  
                 </div>
                 <div class="col-12 col-lg-8 p-0 m-0">
@@ -82,6 +82,9 @@
             </div>
         </section> 
         <!-- Seccion Pie de Pagina -->
+        <section class="diseño">
+            <img src="../images/Grafico 4.png" alt="">
+        </section>
         <footer class="container-fluid">
             <img class="footer-logo" src="../images/Logo1.png" alt="Logo Inkanet Perú">
             <div class="texto-footer">
@@ -103,7 +106,8 @@
             <div class="derechos-de-autor" style="color: white; margin: 20px 0px;">
                 Inkanet Perú (2024) &#169;
             </div>
-        </footer>        
+        </footer>     
+        <script src="./contacto.js"> </script>   
         <script src="../indexInicio/barra.js"> </script>
     </body>
 </html>
