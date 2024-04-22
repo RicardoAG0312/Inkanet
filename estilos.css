@@ -7,7 +7,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lora&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Geologica:wght@300&family=Lora&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dela+Gothic+One&family=Geologica:wght@300&family=Lora&family=Montserrat:wght@100&family=Open+Sans&family=PT+Serif&family=Quicksand:wght@300&family=Raleway:wght@200&family=Rubik+Dirt&family=Share+Tech+Mono&family=Zilla+Slab:ital,wght@0,700;1,600&display=swap');
-*{
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+canvas {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -109,6 +114,8 @@ body::-webkit-scrollbar-thumb {
     background-size: cover;
     background-position: 50% 50%;
     z-index: 9999;
+    margin: 0;
+    padding: 0;
 }
 /* Presentacion Carrusel Principal  */
 .sect-principal{
@@ -586,6 +593,10 @@ footer img{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
+    }
+    .boton-whatsapp {
+        bottom: 15px;
+        right: 280px;        
     }
 }
 /* Video */
