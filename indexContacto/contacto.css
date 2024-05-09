@@ -9,6 +9,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    user-select: none;
 }
 body::-webkit-scrollbar {
     width: 15px; 
@@ -69,6 +70,10 @@ body::-webkit-scrollbar-thumb {
 }
 .dropdown-item:active{
     background-color: #2a2a2a;
+}
+.navbar img {
+    width: 200px;
+    height: 200px;
 }
 /* Seccion Formulario */
 form {
@@ -139,9 +144,10 @@ footer{
     align-items: center;
 }
 footer img{
-    width: 20%;
     padding: 0;
     margin: 0;
+    width: 200px;
+    height: 200px;
 }
 .texto-footer{
     max-width: 300px;
@@ -182,6 +188,28 @@ footer img{
     }
     .barra-nav button{
         margin-left: 10px;
+    }
+}
+/* Footer */
+/* Smartphone Grande */
+@media screen and (max-width: 720px) {
+    footer img{
+        width: 150px;
+        height: 150px;
+    }
+}
+/* Movil Medio */
+@media screen and (max-width: 375px) {
+    footer img{
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Movil Pequeño */
+@media screen and (max-width: 360px) {
+    footer img{
+        width: 100px;
+        height: 100px;
     }
 }
 

@@ -54,7 +54,6 @@ body::-webkit-scrollbar-thumb {
 .boton-whatsapp i {
     font-size: 35px;
 }
-
 /* Barra de navegacion */
 .barra-nav{
     background-color: rgba(220, 220, 220, 0.2);
@@ -95,6 +94,10 @@ body::-webkit-scrollbar-thumb {
 }
 .dropdown-item:active{
     background-color: #2a2a2a;
+}
+.navbar img {
+    width: 200px;
+    height: 200px;
 }
 /* Seccion Nosotros */
 /* Titulo Principal */
@@ -193,7 +196,7 @@ body::-webkit-scrollbar-thumb {
 .sect-historia .imagen{
     margin: 0;
     padding: 0;
-    background-image: url("../images/ciberseguridad.jpeg");
+    background-image: url("../images/proposito.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,7 +218,7 @@ body::-webkit-scrollbar-thumb {
 .sect-proposito .imagen{
     margin: 0;
     padding: 0;
-    background-image: url("../images/ciberseguridad.jpeg");
+    background-image: url("../images/historia.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -364,9 +367,10 @@ footer{
     align-items: center;
 }
 footer img{
-    width: 20%;
     padding: 0;
     margin: 0;
+    width: 200px;
+    height: 200px;
 }
 .texto-footer{
     max-width: 300px;
@@ -412,15 +416,19 @@ footer img{
     }
 }
 /* Seccion Historia */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     .sect-historia header{
-        font-size: 35px;
+        font-size: 60px;
         text-align: center;
     }
     .sect-historia p{
-        font-size: 18px;
+        font-size: 25px;
         line-height: 20px;
         text-align: justify;
+    }
+    .sect-historia .texto p{
+        line-height: 24px;
+        font-size: 21px;
     }
     .sect-historia{
         max-height: 850px;
@@ -464,13 +472,13 @@ footer img{
     }
 }
 /* Seccion Proposito */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     .sect-proposito header{
-        font-size: 40px;
+        font-size: 60px;
         text-align: center;
     }
     .sect-proposito p{
-        font-size: 18px;
+        font-size: 300px;
         line-height: 20px;
         text-align: justify;
     }
@@ -480,8 +488,19 @@ footer img{
     .sect-proposito .imagen{
         visibility: hidden;
     }
+    .sect-proposito .texto{
+        margin: 0;
+        padding: 10px 25px;
+    }
+    .sect-proposito .texto p{
+        line-height: 24px;
+        font-size: 20px;
+    }
+    .sect-proposito h5 {
+        font-size: 30px;
+    }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 375px) {
     .sect-proposito header{
         font-size: 35px;
         text-align: center;
@@ -490,12 +509,18 @@ footer img{
         font-size: 18px;
         line-height: 20px;
         text-align: justify;
+        height: 100%;
     }
     .sect-proposito{
-        max-height: 850px;
+        height: auto;
     }
     .sect-proposito .imagen{
         visibility: hidden;
+    }
+    .sect-proposito .texto{
+        margin: 0;
+        padding: 10px 25px;
+        height: auto;
     }
 }
 @media screen and (max-width: 430px) {
@@ -515,10 +540,12 @@ footer img{
         visibility: hidden;
     }
 }
+
+
 /* Seccion Estadistica */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     .sect-es .texto{
-        font-size: 16px;
+        font-size: 18px;
         line-height: 25px;
     }
     .sect-es i{
@@ -527,8 +554,14 @@ footer img{
     .sect-firts{
         padding: 0 15px;
     }
+    .sect-es{
+        padding: 20px 0;
+        max-width: 100%;
+        height: auto;
+    }
+
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 375px) {
     .sect-es .texto{
         font-size: 14px;
         line-height: 18px;
@@ -549,8 +582,11 @@ footer img{
     .sect-col-sec{
         padding: 0 30px;
     }
+    .sect-es{
+        margin-top: 100px;
+    }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 360px) {
     .sect-es .texto{
         font-size: 14px;
         line-height: 18px;
@@ -571,9 +607,13 @@ footer img{
     .sect-col-sec{
         padding: 0 30px;
     }
+    .sect-es{
+        margin-top: 120px;
+    }
 }
+
 /* Seccion Principios */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     .seccion-principios .caja{
         padding: 0;
     }
@@ -587,7 +627,7 @@ footer img{
     }
     .seccion-principios .caja .overlay{
         position: absolute;
-        top: 13%;
+        top: 20%;
         width: 100%;
         left: 49%;
     }
@@ -647,7 +687,7 @@ footer img{
         text-align: justify;
     }
 }
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 375px) {
     .seccion-principios{
         height: auto;
         padding: 20px 10px;
@@ -661,10 +701,11 @@ footer img{
         flex: 1 1;
         flex-wrap: wrap;
         box-sizing: border-box;
+        padding-bottom: 20px;
     }
     .seccion-principios .caja .card{
-        width: 45%;
-        height: 300px;
+        width: 40%;
+        min-height: 300px;
         margin: 0 auto;
         box-sizing: border-box;
     }
@@ -689,5 +730,28 @@ footer img{
         font-size: 14px;
         line-height: 14px;
         font-family: "Monsetrrat";
+    }
+}
+/* Seccion Footer */
+/* Footer */
+/* Smartphone Grande */
+@media screen and (max-width: 720px) {
+    footer img{
+        width: 150px;
+        height: 150px;
+    }
+}
+/* Movil Medio */
+@media screen and (max-width: 375px) {
+    footer img{
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Movil Pequeño */
+@media screen and (max-width: 360px) {
+    footer img{
+        width: 100px;
+        height: 100px;
     }
 }

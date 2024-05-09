@@ -50,7 +50,6 @@ body::-webkit-scrollbar-thumb {
 .boton-whatsapp i {
     font-size: 35px;
 }
-
 /* Barra de navegacion */
 .barra-nav{
     background-color: rgba(220, 220, 220, 0.2);
@@ -91,6 +90,10 @@ body::-webkit-scrollbar-thumb {
 }
 .dropdown-item:active{
     background-color: #2a2a2a;
+}
+.navbar img {
+    width: 200px;
+    height: 200px;
 }
 /* Seccion Servicios */
 /* Titulo Principal */
@@ -368,9 +371,10 @@ footer{
     align-items: center;
 }
 footer img{
-    width: 20%;
     padding: 0;
     margin: 0;
+    width: 200px;
+    height: 200px;
 }
 .texto-footer{
     max-width: 300px;
@@ -434,28 +438,31 @@ footer img{
     }
 }
 /* Titulo Principal */
-@media screen and (max-width: 768px) {
-    .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 15%;
-    }
-    .titulo-principal{
-        font-size: 50px;
-    }
-}
-@media screen and (max-width: 576px) {
-    .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 15%;
-    }
-    .titulo-principal{
-        font-size: 35px;
-    }
-}
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 720px) {
     .titulo-con-lineas::before, .titulo-con-lineas::after {
         width: 10%;
     }
     .titulo-principal{
+        font-size: 55px;
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 12%;
+    }
+    .titulo-principal{
+        font-size: 28px;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 8%;
+    }
+    .titulo-principal{
         font-size: 30px;
+        padding-top: 10px;
     }
 }
 /* Links */
@@ -520,26 +527,32 @@ footer img{
     }
 }
 /* Beneficios */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     .titulo-beneficios{
-        font-size: 50px;
+        font-size: 70px;
     }
     .sect-beneficios .texto{
         width: 100%;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .sect-beneficios .sect-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .sect-beneficios .card{
-        width: 30%;
-        max-height: 50%;
+        width: 100%;
     }
     .sect-beneficios .card-title{
-        font-size: 25px;
+        font-size: 70px;
     }
     .sect-beneficios .card-text{
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 22px;
+        line-height: 30px;
     }
+
 }
 @media screen and (max-width: 576px) {
     .titulo-beneficios{
@@ -568,17 +581,23 @@ footer img{
     }
 }
 /* Seccion Caracteristicas */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     .titulo-beneficios{
-        font-size: 50px;
+        font-size: 60px;
     }
     .sect-carac .texto{
-        width: 100%;
-        font-size: 16px;
-        line-height: 22px;
+        width: 100%;    
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .sect-car .caja h2{
+        font-size: 28px;
+    }
+    .sect-car .card-text {
+        font-size: 20px;
     }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 375px) {
     .titulo-beneficios{
         font-size: 35px;
     }
@@ -591,10 +610,10 @@ footer img{
         visibility: hidden;
     }
     .sect-car .caja h2{
-        font-size: 25px;
+        font-size: 17px;
     }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 360px) {
     .titulo-beneficios{
         font-size: 35px;
     }
@@ -603,26 +622,35 @@ footer img{
         font-size: 14px;
         line-height: 20px;
     }
+    .sect-car .caja{
+        position: relative;
+        margin: 20px;
+        display: flex;
+        padding: 20px;
+        background-color: rgba(220, 220, 220, 1);
+        border-radius: 25px 0 25px 0;
+        -webkit-border-radius: 25px 0 25px 0;
+        -moz-border-radius: 25px 0 25px 0;
+        -ms-border-radius: 25px 0 25px 0;
+        -o-border-radius: 25px 0 25px 0;
+        border: 2px solid #0CABAE;
+        cursor: pointer;
+        transition: all ease 0.5s;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        text-decoration: none;
+    }
     .sect-car .caja h2{
-        font-size: 30px;
+        font-size: 16px;
     }
 }
 /* Seccion Inkanet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     .sect-ink .texto p{
-        font-size: 16px;
+        font-size: 20px;
         line-height: 22px;
-    }
-    .sect-ink .imgen{
-        padding: 0px 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .sect-ink img{
-        width: 100%;
-        text-align: center;
     }
     .sect-ink .card{
         width: 30%;
@@ -635,8 +663,11 @@ footer img{
         font-size: 16px;
         line-height: 22px;
     }
+    .sect-ink .imgen{
+        display: none;
+    }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 375px) {
     .sect-ink{
         width: 100%;
         background-color: #2a2a2a;
@@ -658,6 +689,7 @@ footer img{
         display: flex;
         justify-content: center;
         align-items: center;
+        display: none;
     }
     .sect-ink img{
         width: 65%;
@@ -707,12 +739,30 @@ footer img{
         width: 100%;
     }
 }
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 360px) {
     .sect-ink .imgen{
-        padding: 20px 0;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
+    }
+}
+/* Footer */
+/* Smartphone Grande */
+@media screen and (max-width: 720px) {
+    footer img{
+        width: 150px;
+        height: 150px;
+    }
+}
+/* Movil Medio */
+@media screen and (max-width: 375px) {
+    footer img{
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Movil Pequeño */
+@media screen and (max-width: 360px) {
+    footer img{
+        width: 100px;
+        height: 100px;
     }
 }

@@ -92,6 +92,10 @@ body::-webkit-scrollbar-thumb {
 .dropdown-item:active{
     background-color: #2a2a2a;
 }
+.navbar img {
+    width: 200px;
+    height: 200px;
+}
 /* Ciberseguridad */
 .titulo-principal{
     margin: 0;
@@ -163,15 +167,15 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
 }
 .sect-sec .row .contenedor-img {
-    background-image: url(../../images/ciber.jpeg);
+    background-image: url(../../images/cibersecy.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 20px 0 0 20px;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
     height: 100%;
 }
 .sect-sec .row .contenedor-info {
@@ -213,16 +217,16 @@ ul {
 }
 footer{
     background-color: #2a2a2a;
-    border-top: 1px solid #0CABAE;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 footer img{
-    width: 20%;
     padding: 0;
     margin: 0;
+    width: 200px;
+    height: 200px;
 }
 .texto-footer{
     max-width: 300px;
