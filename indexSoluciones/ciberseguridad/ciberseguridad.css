@@ -272,10 +272,7 @@ footer img{
     }
 }
 /* Titulo Principal */
-@media screen and (max-width: 768px) {
-    .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 15%;
-    }
+@media screen and (max-width: 720px) {
     .sect-sec{
         height: auto;
     }
@@ -286,6 +283,72 @@ footer img{
     }
     .sect-sec .row .contenedor-img {
         display: none;
+    }
+    .titulo-principal{
+        font-size: 75px;
+    }
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 20%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .sect-sec{
+        height: auto;
+    }
+    .sect-sec .row{
+        margin: 50px auto;
+        padding: 0;
+        height: auto;
+    }
+    .sect-sec .row .contenedor-img {
+        display: none;
+    }
+    .titulo-principal{
+        font-size: 55px;
+    }
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 10%;
+    }
+}
+@media screen and (max-width: 360px) {
+    .sect-sec{
+        height: auto;
+    }
+    .sect-sec .row{
+        margin: 50px auto;
+        padding: 0;
+        height: auto;
+    }
+    .sect-sec .row .contenedor-img {
+        display: none;
+    }
+    .titulo-principal{
+        font-size: 50px;
+    }
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 10%;
+    }
+}
+/* Footer */
+/* Smartphone Grande */
+@media screen and (max-width: 720px) {
+    footer img{
+        width: 150px;
+        height: 150px;
+    }
+}
+/* Movil Medio */
+@media screen and (max-width: 375px) {
+    footer img{
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Movil Pequeño */
+@media screen and (max-width: 360px) {
+    footer img{
+        width: 100px;
+        height: 100px;
     }
 }
 
