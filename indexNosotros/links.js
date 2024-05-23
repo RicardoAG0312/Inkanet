@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let tercerTituloVision = document.createElement("h5");
         tercerTituloVision.innerText = "Visión:";
         let tercerTextoVision = document.createElement("p");
-        tercerTextoVision.innerText = "Nuestro compromiso inquebrantable es proporcionar una experiencia optimizada tanto para los administradores de redes como para sus usuarios. Centramos todas nuestras acciones en nuestros clientes, los arquitectos y operadores de redes, para garantizar que sus usuarios finales - ya sean miembros del equipo en una reunión de Zoom, asociados utilizando escáneres en tiendas o estudiantes en clases virtuales - puedan disfrutar de una experiencia satisfactoria y productiva.";
+        tercerTextoVision.innerText = "Nuestro compromiso inquebrantable es proporcionar una experiencia optimizada tanto para los administradores de redes como para sus usuarios. Centramos todas nuestras acciones en nuestros clientes, los arquitectos y operadores de redes, para garantizar que sus usuarios finales.";
         tercerDivVision.appendChild(tercerTituloVision);
         tercerDivVision.appendChild(tercerTextoVision);
         nuevoColTexto.appendChild(nuevoHeader);
