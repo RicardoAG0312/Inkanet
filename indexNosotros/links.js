@@ -21,11 +21,17 @@ document.addEventListener("DOMContentLoaded", function() {
         nuevoHeader.innerText = "Nuestra Historia";
         nuevoColTexto.appendChild(nuevoHeader);
         let nuevoPrimerParrafo = document.createElement("p");
-        nuevoPrimerParrafo.innerText = "Inkanet Perú S.A.C, es una empresa 100% de capital peruano, actualmente reconocida en el campo de la ciberseguridad. Cuenta con el respaldo de las mejores marcas y un personal altamente calificado para atenderlas. Inkanet Perú ha estado brindando servicios a los ISP más reconocidos en el mercado, como Media Commerce, Optical Networks, Nextnet, Yachay, entre otros.";
+        nuevoPrimerParrafo.innerText = "Inkanet Perú S.A.C. es una empresa 100% de capital peruano, actualmente es una empresa de ciberseguridad con reconocimiento de las mejores marcas y personal calificado para la atención de las mismas.";
         nuevoColTexto.appendChild(nuevoPrimerParrafo);
         let nuevoSegundoParrafo = document.createElement("p");
-        nuevoSegundoParrafo.innerText = "Identificando la necesidad de no sólo ofrecer servicios de ciberseguridad, sino también de proporcionar un internet seguro y de rápida respuesta en seguridad y servicios añadidos, Inkanet Perú obtuvo el permiso del MTC para el Servicio de Valor añadido y la Distribución y Comercialización de Internet. Ahora, Inkanet Perú se enorgullece de tener clientes que han confiado en esta nueva era del Internet, donde no sólo se trata de una fibra de interconexión o un firewall administrado por un operador, sino de Interconexión y Ciberseguridad (Internet 2.0).";
+        nuevoSegundoParrafo.innerText = "Inkanet Perú viene brindando servicios para diferentes entidades de gobierno y privado a nivel nacional, teniendo así una gran cartera de clientes y experiencia en despliegues masivos de las soluciones de protección al usuario final.";
         nuevoColTexto.appendChild(nuevoSegundoParrafo);
+        let nuevoTercerParrafo = document.createElement("p");
+        nuevoTercerParrafo.innerText = "Es ahí donde encuentra la necesidad de no solo ser una empresa que da servicios de ciberseguridad, sino también de ofrecer servicios personalizados y acordes a la necesidad del cliente. Seguro y de rápida respuesta ante cualquier incidente.";
+        nuevoColTexto.appendChild(nuevoTercerParrafo);
+        let nuevoCuartoParrafo = document.createElement("p");
+        nuevoCuartoParrafo.innerText = "Actualmente, Inkanet Perú cuenta ya con clientes que han confiado en esta nueva era de ciberseguridad, donde no solo será una venta sino una experiencia en servicio y atención, donde el cliente tendrá toda la asesoría y seguimiento de sus puntos críticos en ciberseguridad.";
+        nuevoColTexto.appendChild(nuevoCuartoParrafo);
         let contenido = document.getElementById("historia");
         contenido.appendChild(nuevaSection);
     }
