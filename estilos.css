@@ -460,272 +460,190 @@ footer img{
 /* Responsivos Medias Querys */
 /* Loading */
 /* PC Escritorio Grande */
-@media screen and (max-width: 1920px) {
-    #loading-screen img{
+/* Extra grande (para pantallas grandes) */
+@media only screen and (min-width: 1201px) {
+    #loading-screen img {
+        width: 23%;
+    }
+    .spinner-border {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #loading-screen img {
         width: 25%;
     }
     .spinner-border {
-        width: 4.5rem;
-        height: 4.5rem;
-    }
-    #particles-js {
-        width: 100%;
-        height: 100%;
+        width: 3rem;
+        height: 3rem;
     }
 }
-/* PC Escritorio Medio */
-@media screen and (max-width: 1440px) {
-    #loading-screen img{
-        width: 25%;
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #loading-screen img {
+        width: 30%;
     }
     .spinner-border {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    #particles-js {
-        width: 100%;
-        height: 100%;
+        width: 2rem;
+        height: 2rem;
     }
 }
-/* Ordenador Portatil Medio */
-@media screen and (max-width: 1366px) {
-    #loading-screen img{
-        width: 25%;
-    }
-    .spinner-border {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    #particles-js {
-        width: 100%;
-        height: 100%;
-    }
-}
-/* Smartphone Grande */
-@media screen and (max-width: 720px) {
-    #loading-screen img{
-        width: 45%;
-    }
-    .spinner-border {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    #particles-js {
-        width: 100%;
-        height: 100%;
-    }
-}
-/* Movil Medio */
-@media screen and (max-width: 375px) {
-    #loading-screen img{
-        width: 45%;
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #loading-screen img {
+        width: 30%;
     }
     .spinner-border {
         width: 2.5rem;
         height: 2.5rem;
     }
-    #particles-js {
-        width: 100%;
-        height: 100%;
-    }
 }
-/* Movil Pequeño */
-@media screen and (max-width: 360px) {
-    #loading-screen img{
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    #loading-screen img {
         width: 40%;
     }
     .spinner-border {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-    #particles-js {
-        width: 100%;
-        height: 100%;
+        width: 2rem;
+        height: 2rem;
     }
 }
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    #loading-screen img {
+        width: 40%;
+    }
+    .spinner-border {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    #loading-screen img {
+        width: 50%;
+    }
+    .spinner-border {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
 /* Barra de navegación */
-/* Smartphone Grande */
-@media screen and (max-width: 720px) {
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
     .navbar-nav {
         display: none;
     }
     .navbar-collapse{
         background-color: rgb(220, 220, 220);
-        padding: 10px 0px;
+        padding: 5px 0px;
     }
     .barra-nav{
         padding: 0;
     }
-    .barra-nav img{
-        margin-right: 10px;
-    }
     .barra-nav button{
-        margin-left: 10px;
+        margin-left: 7px;
     }
 }
-/* Movil Medio */
-@media screen and (max-width: 375px) {
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
     .navbar-nav {
         display: none;
     }
     .navbar-collapse{
         background-color: rgb(220, 220, 220);
-        padding: 10px 0px;
+        padding: 5px 0px;
     }
     .barra-nav{
         padding: 0;
     }
-    .barra-nav img{
-        margin-right: 10px;
-    }
     .barra-nav button{
-        margin-left: 10px;
+        margin-left: 7px;
     }
 }
-/* Movil Pequeño */
-@media screen and (max-width: 360px) {
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
     .navbar-nav {
         display: none;
     }
     .navbar-collapse{
         background-color: rgb(220, 220, 220);
-        padding: 10px 0px;
+        padding: 5px 0px;
     }
     .barra-nav{
         padding: 0;
     }
-    .barra-nav img{
-        margin-right: 10px;
-    }
     .barra-nav button{
-        margin-left: 10px;
+        margin-left: 7px;
     }
 }
+
+
+
 /* Presentacion Carrusel Principal */
-/* PC Escritorio Grande */
-@media screen and (max-width: 1920px) {
-    .sect-principal{
-        margin: 0;
-        padding: 0;
-    }
-    .sect-principal .row header{
-        font-size: 30px;
-    }
-    .sect-principal .row p{
-        line-height: 24px;
-        font-size: 18px;
-    }
-    .sect-principal .row a{
-        margin: 50px 0;
-    }
-    .sect-principal .row{
-        padding: 0 50px;
-        height: auto;
-    }
-    .sect-principal .indicadores{
-        padding: 0;
-    }
-    .sect-principal .row img {
-        width: 400px;
-        height: 400px;
-    }
-}
-/* PC Escritorio Medio */
-@media screen and (max-width: 1440px) {
-    .sect-principal{
-        margin: 0;
-        padding: 0;
-    }
-    .sect-principal .row header{
-        font-size: 30px;
-    }
-    .sect-principal .row p{
-        line-height: 24px;
-        font-size: 18px;
-    }
-    .sect-principal .row a{
-        margin: 50px 0;
-    }
-    .sect-principal .row{
-        padding: 0 50px;
-        height: auto;
-    }
-    .sect-principal .indicadores{
-        padding: 0;
-    }
-    .sect-principal .row img {
-        width: 400px;
-        height: 400px;
-    }
-}
-/* Ordenador Portatil Medio */
-@media screen and (max-width: 1366px) {
-    .sect-principal{
-        margin: 0;
-        padding: 0;
-    }
-    .sect-principal .row header{
-        font-size: 30px;
-    }
-    .sect-principal .row p{
-        line-height: 24px;
-        font-size: 18px;
-    }
-    .sect-principal .row a{
-        margin: 50px 0;
-    }
-    .sect-principal .row{
-        padding: 0 50px;
-        height: auto;
-    }
-    .sect-principal .indicadores{
-        padding: 0;
-    }
-    .sect-principal .row img {
-        width: 400px;
-        height: 400px;
-    }
-}
-/* Smartphone Grande */
-@media screen and (max-width: 720px) {
-    .sect-principal{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .sect-principal .row .caja{
-        margin: 0;
-        padding: 0; 
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1;
+/* Extra grande (para pantallas grandes) */
+@media only screen and (min-width: 1201px) {
+    .sect-principal .row .caja header {
+        font-size: 60px;
+        width: 500px;
         text-align: center;
     }
+    .sect-principal .row .caja p{
+        line-height: 24px;
+        font-size: 22px;
+        width: 500px;
+        text-align: center;
+    }
+}
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
     .sect-principal .row .caja header {
-        font-size: 38px;
+        font-size: 55px;
+        width: 500px;
+        text-align: center;
     }
     .sect-principal .row .caja p{
-        line-height: 25px;
+        line-height: 26px;
         font-size: 20px;
+        width: 500px;
+        text-align: center;
     }
-    .sect-principal .row .caja a{
-        margin: 20px 0;
+}
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .sect-principal .row .caja header {
+        font-size: 55px;
+        width: 500px;
+        text-align: center;
     }
-    .sect-principal .row{
-        padding: 50px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-height: 500px;
+    .sect-principal .row .caja p{
+        line-height: 24px;
+        font-size: 20px;
+        width: 500px;
+        text-align: center;
     }
-    .sect-principal .indicadores{
-        padding: 0;
-        margin-top: 10px;
+    .sect-principal .row .imagen img{
+        visibility: hidden;
+    }
+    .sect-principal .row .imagen{
+        visibility: hidden;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .sect-principal .row .caja header {
+        font-size: 50px;
+        width: 400px;
+        text-align: center;
+    }
+    .sect-principal .row .caja p{
+        line-height: 24px;
+        font-size: 20px;
+        width: 400px;
+        text-align: center;
     }
     .sect-principal .row .imagen img{
         visibility: hidden;
@@ -736,12 +654,55 @@ footer img{
     #particles-js {
         height: 0%;
     }
-    .boton-whatsapp {
-        display: none;    
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .sect-principal .row .caja header {
+        font-size: 45px;
+        width: 400px;
+        text-align: center;
+    }
+    .sect-principal .row .caja p{
+        line-height: 26px;
+        font-size: 20px;
+        width: 400px;
+        text-align: center;
+    }
+    .sect-principal .row .imagen img{
+        visibility: hidden;
+    }
+    .sect-principal .row .imagen{
+        visibility: hidden;
+    }
+    #particles-js {
+        height: 0%;
     }
 }
-/* Movil Medio */
-@media screen and (max-width: 375px) {
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .sect-principal .row .caja header {
+        font-size: 40px;
+        width: 400px;
+        text-align: center;
+    }
+    .sect-principal .row .caja p{
+        line-height: 24px;
+        font-size: 18px;
+        width: 400px;
+        text-align: center;
+    }
+    .sect-principal .row .imagen img{
+        visibility: hidden;
+    }
+    .sect-principal .row .imagen{
+        visibility: hidden;
+    }
+    #particles-js {
+        height: 0%;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
     .sect-principal{
         display: flex;
         align-items: center;
@@ -759,65 +720,13 @@ footer img{
         text-align: center;
     }
     .sect-principal .row .caja header {
-        font-size: 30px;
+        font-size: 35px;
+        width: 300px;
     }
     .sect-principal .row .caja p{
         line-height: 22px;
-        font-size: 14px;
-    }
-    .sect-principal .row .caja a{
-        margin: 20px 0;
-    }
-    .sect-principal .row{
-        padding: 50px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        max-height: 500px;
-    }
-    .sect-principal .indicadores{
-        padding: 0;
-        margin-top: 10px;
-    }
-    .sect-principal .row .imagen img{
-        visibility: hidden;
-    }
-    .sect-principal .row .imagen{
-        visibility: hidden;
-    }
-    #particles-js {
-        height: 0%;
-    }
-    .boton-whatsapp {
-        display: none;        
-    }
-}
-/* Movil Pequeño */
-@media screen and (max-width: 360px) {
-    .sect-principal{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .sect-principal .row .caja{
-        margin: 0;
-        padding: 0; 
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        z-index: 1;
-        text-align: center;
-    }
-    .sect-principal .row .caja header {
-        font-size: 30px;
-    }
-    .sect-principal .row .caja p{
-        line-height: 22px;
-        font-size: 14px;
+        font-size: 16px;
+        width: 300px;
     }
     .sect-principal .row .caja a{
         margin: 20px 0;
@@ -857,81 +766,173 @@ footer img{
 }
 
 /* Seccion Servicios */
-/* PC Escritorio Grande */
-@media screen and (max-width: 1920px) {
-
-}
-/* PC Escritorio Medio */
-@media screen and (max-width: 1440px) {
-
-}
-/* Ordenador Portatil Medio */
-@media screen and (max-width: 1366px) {
-
-}
-/* Smartphone Grande */
-@media screen and (max-width: 720px) {
+/* Extra grande (para pantallas grandes) */
+@media only screen and (min-width: 1201px) {
     .titulo-principal{
-        font-size: 70px;
+        font-size: 65px;
     }
     .sect-servicios{
         height: auto;
     }
     .sect-servicios h3 {
-        font-size: 65px;
+        font-size: 35px;
     }
     .sect-servicios .icono i{
-        font-size: 120px;
+        font-size: 110px;
     }
     .sect-servicios p{
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 30%;
+    }
+}
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .titulo-principal{
+        font-size: 65px;
+    }
+    .sect-servicios{
+        height: auto;
+    }
+    .sect-servicios h3 {
+        font-size: 35px;
+    }
+    .sect-servicios .icono i{
+        font-size: 100px;
+    }
+    .sect-servicios p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 30%;
+    }
+}
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .titulo-principal{
+        font-size: 65px;
+    }
+    .sect-servicios{
+        height: auto;
+    }
+    .sect-servicios h3 {
+        font-size: 25px;
+    }
+    .sect-servicios .icono i{
+        font-size: 100px;
+    }
+    .sect-servicios p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 25%;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .titulo-principal{
+        font-size: 65px;
+    }
+    .sect-servicios{
+        height: auto;
+    }
+    .sect-servicios h3 {
+        font-size: 25px;
+    }
+    .sect-servicios .icono i{
+        font-size: 85px;
+    }
+    .sect-servicios p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 20%;
+    }
+    .sect-servicios a {
+        font-size: 16px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .titulo-principal {
+        font-size: 55px;
+    }
+    .sect-servicios{
+        height: auto;
+    }
+    .sect-servicios h3 {
+        font-size: 45px;
+    }
+    .sect-servicios .icono i{
+        font-size: 100px;
+    }
+    .sect-servicios p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 17%;
+    }
+    .sect-servicios a {
+        font-size: 16px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .titulo-principal{
+        font-size: 45px;
+    }
+    .sect-servicios{
+        height: auto;
+    }
+    .sect-servicios h3 {
+        font-size: 35px;
+    }
+    .sect-servicios .icono i{
+        font-size: 75px;
+    }
+    .sect-servicios p{
+        font-size: 16px;
+        line-height: 22px;
     }
     .titulo-con-lineas::before, .titulo-con-lineas::after {
         width: 15%;
     }
     .sect-servicios a {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
-/* Movil Medio */
-@media screen and (max-width: 375px) {
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
     .titulo-principal{
-        font-size: 45px;
+        font-size: 35px;
     }
     .sect-servicios{
         height: auto;
     }
+    .sect-servicios h3 {
+        font-size: 35px;
+    }
     .sect-servicios .icono i{
-        font-size: 80px;
+        font-size: 75px;
     }
     .sect-servicios p{
         font-size: 16px;
-        line-height: 20px;
+        line-height: 22px;
     }
     .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 8%;
+        width: 12%;
     }
-}
-/* Movil Pequeño */
-@media screen and (max-width: 360px) {
-    .titulo-principal{
-        font-size: 45px;
-    }
-    .sect-servicios{
-        height: auto;
-    }
-    .sect-servicios .icono i{
-        font-size: 80px;
-    }
-    .sect-servicios p{
+    .sect-servicios a {
         font-size: 16px;
-        line-height: 20px;
-    }
-    .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 8%;
     }
 }
+
 /* Partners */
 @media screen and (max-width: 768px) {
     .carousel{
@@ -953,6 +954,7 @@ footer img{
         width: 80%;
     }
 }
+
 /* Footer */
 /* Smartphone Grande */
 @media screen and (max-width: 720px) {

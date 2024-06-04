@@ -33,4 +33,4 @@ let flechaIzquierda = () => {
 }
 document.getElementById("flecha-izq").addEventListener("click", flechaIzquierda) //Asignas el evento
 
-setInterval(flechaDerecha, 1000);
+setInterval(flechaDerecha, 3000);

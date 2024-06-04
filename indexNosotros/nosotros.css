@@ -392,6 +392,7 @@ footer img{
 .iconos-redes-sociales a:hover i{
     color: rgb(220, 220, 220);
 }
+
 /* Responsivos Medias Querys */
 /* Barra de navegación */
 @media screen and (max-width: 768px) {
@@ -413,30 +414,13 @@ footer img{
     }
 }
 /* Seccion Historia */
-@media screen and (max-width: 720px) {
+/* Extra grande (para pantallas grandes) */
+@media only screen and (min-width: 1201px) {
+    .titulo-principal{
+        font-size: 50px;
+    }
     .sect-historia header{
-        font-size: 60px;
-        text-align: center;
-    }
-    .sect-historia p{
-        font-size: 25px;
-        line-height: 20px;
-        text-align: justify;
-    }
-    .sect-historia .texto p{
-        line-height: 24px;
-        font-size: 21px;
-    }
-    .sect-historia{
-        max-height: 850px;
-    }
-    .sect-historia .imagen{
-        visibility: hidden;
-    }
-}
-@media screen and (max-width: 576px) {
-    .sect-historia header{
-        font-size: 35px;
+        font-size: 40px;
         text-align: center;
     }
     .sect-historia p{
@@ -445,15 +429,16 @@ footer img{
         text-align: justify;
     }
     .sect-historia{
-        max-height: 850px;
-    }
-    .sect-historia .imagen{
-        visibility: hidden;
+        max-height: 800px;
     }
 }
-@media screen and (max-width: 430px) {
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .titulo-principal{
+        font-size: 50px;
+    }
     .sect-historia header{
-        font-size: 35px;
+        font-size: 40px;
         text-align: center;
     }
     .sect-historia p{
@@ -462,65 +447,156 @@ footer img{
         text-align: justify;
     }
     .sect-historia{
-        max-height: 850px;
+        max-height: 800px;
+    }
+}
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .titulo-principal{
+        font-size: 50px;
+    }
+    .sect-historia header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-historia p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-historia{
+        max-height: 800px;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .titulo-principal{
+        font-size: 50px;
+    }
+    .sect-historia header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-historia p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-historia{
+        max-height: 800px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .titulo-principal{
+        font-size: 50px;
+    }
+    .sect-historia header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-historia p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-historia{
+        max-height: 800px;
+    }
+    .sect-historia .imagen{
+        visibility: hidden;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .titulo-principal{
+        font-size: 50px;
+    }
+    .sect-historia header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-historia p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-historia{
+        max-height: 800px;
+    }
+    .sect-historia .imagen{
+        visibility: hidden;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .titulo-principal{
+        font-size: 50px;
+    }
+    .sect-historia header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-historia p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    }
+    .sect-historia{
+        max-height: 800px;
     }
     .sect-historia .imagen{
         visibility: hidden;
     }
 }
 /* Seccion Proposito */
-@media screen and (max-width: 720px) {
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
     .sect-proposito header{
-        font-size: 60px;
-        text-align: center;
-    }
-    .sect-proposito p{
-        font-size: 300px;
-        line-height: 20px;
-        text-align: justify;
-    }
-    .sect-proposito{
-        max-height: 850px;
-    }
-    .sect-proposito .imagen{
-        visibility: hidden;
-    }
-    .sect-proposito .texto{
-        margin: 0;
-        padding: 10px 25px;
-    }
-    .sect-proposito .texto p{
-        line-height: 24px;
-        font-size: 20px;
-    }
-    .sect-proposito h5 {
-        font-size: 30px;
-    }
-}
-@media screen and (max-width: 375px) {
-    .sect-proposito header{
-        font-size: 35px;
+        font-size: 40px;
         text-align: center;
     }
     .sect-proposito p{
         font-size: 18px;
-        line-height: 20px;
+        line-height: 16px;
         text-align: justify;
-        height: 100%;
     }
     .sect-proposito{
-        height: auto;
-    }
-    .sect-proposito .imagen{
-        visibility: hidden;
-    }
-    .sect-proposito .texto{
-        margin: 0;
-        padding: 10px 25px;
-        height: auto;
+        max-height: 1300px;
     }
 }
-@media screen and (max-width: 430px) {
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .sect-proposito header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-proposito p{
+        font-size: 18px;
+        line-height: 16px;
+        text-align: justify;
+    }
+    .sect-proposito{
+        max-height: 1300px;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .sect-proposito header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-proposito p{
+        font-size: 18px;
+        line-height: 16px;
+        text-align: justify;
+    }
+    .sect-proposito{
+        max-height: 1300px;
+    }
+}
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
     .sect-proposito header{
         font-size: 40px;
         text-align: center;
@@ -537,34 +613,63 @@ footer img{
         visibility: hidden;
     }
 }
-
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .sect-proposito header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-proposito p{
+        font-size: 18px;
+        line-height: 16px;
+        text-align: justify;
+    }
+    .sect-proposito{
+        max-height: 1300px;
+    }
+    .sect-proposito .imagen{
+        visibility: hidden;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .sect-proposito header{
+        font-size: 40px;
+        text-align: center;
+    }
+    .sect-proposito p{
+        font-size: 18px;
+        line-height: 16px;
+        text-align: justify;
+    }
+    .sect-proposito{
+        max-height: 1100px;
+    }
+    .sect-proposito .imagen{
+        visibility: hidden;
+    }
+}
 
 /* Seccion Estadistica */
-@media screen and (max-width: 720px) {
-    .sect-es .texto{
-        font-size: 18px;
-        line-height: 25px;
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .sect-col-firts, .sect-col-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px auto;
+        text-align: center;
     }
-    .sect-es i{
-        font-size: 50px;
+    .sect-es .icono:hover{
+        font-size: 100px;
     }
-    .sect-firts{
-        padding: 0 15px;
-    }
-    .sect-es{
-        padding: 20px 0;
-        max-width: 100%;
-        height: auto;
-    }
-
-}
-@media screen and (max-width: 375px) {
     .sect-es .texto{
         font-size: 14px;
         line-height: 18px;
     }
     .sect-es i{
-        font-size: 25px;
+        font-size: 35px;
     }
     .sect-col-sec .icono{
         display: flex;
@@ -576,20 +681,29 @@ footer img{
         justify-content: center;
         align-items: center;
     }
-    .sect-col-sec{
-        padding: 0 30px;
-    }
     .sect-es{
-        margin-top: 100px;
+        margin-top: 120px;
     }
 }
-@media screen and (max-width: 360px) {
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .sect-col-firts, .sect-col-sec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px auto;
+        text-align: center;
+    }
+    .sect-es .icono:hover{
+        font-size: 100px;
+    }
     .sect-es .texto{
         font-size: 14px;
         line-height: 18px;
     }
     .sect-es i{
-        font-size: 25px;
+        font-size: 35px;
     }
     .sect-col-sec .icono{
         display: flex;
@@ -600,9 +714,6 @@ footer img{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .sect-col-sec{
-        padding: 0 30px;
     }
     .sect-es{
         margin-top: 120px;
@@ -610,125 +721,229 @@ footer img{
 }
 
 /* Seccion Principios */
-@media screen and (max-width: 720px) {
-    .seccion-principios .caja{
-        padding: 0;
+/* Extra grande (para pantallas grandes) */
+@media only screen and (min-width: 1201px) {
+    .overlay{
+        transition: all 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
     }
-    .seccion-principios .caja .card p{
-        width: 100%;
+    .overlay p{
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family: 'Montserrat';
+    }
+    .card-text {
+        text-align: center;
         font-size: 16px;
-        line-height: 24px;
     }
-    .seccion-principios .card{
-        position: relative;
+    .card-body {
+        min-height: 150px;
     }
-    .seccion-principios .caja .overlay{
+}
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .overlay{
+        transition: all 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .overlay p{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family: 'Montserrat';
+    }
+    .card-text {
+        text-align: center;
+    }
+    .card-body {
+        height: 220px;
+    }
+}
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .overlay{
+        transition: all 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .overlay p{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family: 'Montserrat';
+    }
+    .card-text {
+        text-align: center;
+    }
+    .card-body {
+        height: 230px;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .overlay{
+        transition: all 0.3s ease;
+        opacity: 0;
         position: absolute;
         top: 20%;
-        width: 100%;
-        left: 49%;
-    }
-}
-@media screen and (max-width: 576px) {
-    .seccion-principios .caja .card-text{
-        height: 20%;
-    }
-    .seccion-principios .caja .card .overlay p{
-        font-size: 14px;
-    }
-    .seccion-principios .caja .card p{
-        width: 100%;
-        height: 100%;
-        font-size: 14px;
-        line-height: 14px;
-        font-family: "Monsetrrat";
-    }
-    .seccion-principios{
-        height: auto;
-        padding: 20px 10px;
-    }
-    .seccion-principios .caja {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex: 1 1;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-    }
-    .seccion-principios .caja .card{
-        width: 45%;
-        height: 300px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-    .seccion-principios .caja .card img{
-        height: 50%;
-    }
-    .seccion-principios .caja .overlay{
-        position: absolute;
-        top: 25%;
-        width: 100%;
         left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
     }
-    .seccion-principios .caja .card-body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .overlay p{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family: 'Montserrat';
     }
-    .seccion-principios .caja .card-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
+    .card-text {
+        text-align: center;
+    }
+    .card-body {
+        height: 280px;
     }
 }
-@media screen and (max-width: 375px) {
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
     .seccion-principios{
-        height: auto;
-        padding: 20px 10px;
-    }
-    .seccion-principios .caja {
         width: 100%;
+        max-height: 2700px;
+    }
+    .seccion-principios div {
+        height: auto;
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
-        flex: 1 1;
         flex-wrap: wrap;
-        box-sizing: border-box;
-        padding-bottom: 20px;
     }
-    .seccion-principios .caja .card{
-        width: 40%;
-        min-height: 300px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-    .seccion-principios .caja .card img{
-        height: 50%;
-    }
-    .seccion-principios .caja .overlay{
+    .overlay{
+        transition: all 0.3s ease;
+        opacity: 0;
         position: absolute;
-        top: 25%;
-        width: 100%;
+        top: 40%;
         left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
     }
-    .seccion-principios .caja .card-text{
-        height: 5%;
+    .overlay p{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family: 'Montserrat';
     }
-    .seccion-principios .caja .card .overlay p{
-        font-size: 14px;
-    }
-    .seccion-principios .caja .card p{
-        width: 100%;
-        height: 100%;
-        font-size: 14px;
-        line-height: 14px;
-        font-family: "Monsetrrat";
+    .card-text {
+        text-align: center;
     }
 }
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .seccion-principios{
+        width: 100%;
+        max-height: 2400px;
+    }
+    .seccion-principios div {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .overlay{
+        transition: all 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .overlay p{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family: 'Montserrat';
+    }
+    .card-text {
+        text-align: center;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .seccion-principios{
+        width: 100%;
+        max-height: 1800px;
+    }
+    .seccion-principios div {
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .overlay{
+        transition: all 0.3s ease;
+        opacity: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+    .overlay p{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 0;
+        font-family: 'Montserrat';
+    }
+    .card-text {
+        text-align: center;
+    }
+}
+
+
 /* Seccion Footer */
 /* Footer */
 /* Smartphone Grande */

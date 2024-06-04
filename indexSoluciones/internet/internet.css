@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb {
 .sect-sec .row{
     margin: 50px auto;
     padding: 0;
-    height: 500PX;
+    height: 500px;
     background-color: #F3F3F3;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -253,26 +253,71 @@ footer img{
 }
 /* Responsivos Medias Querys */
 /* Barra de navegación */
-@media screen and (max-width: 768px) {
+/* Medio pequeño (para teléfonos móviles grandes) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
     .navbar-nav {
         display: none;
     }
     .navbar-collapse{
         background-color: rgb(220, 220, 220);
-        padding: 10px 0px;
+        padding: 5px 0px;
     }
     .barra-nav{
         padding: 0;
     }
-    .barra-nav img{
-        margin-right: 10px;
+    .barra-nav button{
+        margin-left: 7px;
+    }
+}
+/* Pequeño (para teléfonos móviles pequeños) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-collapse{
+        background-color: rgb(220, 220, 220);
+        padding: 5px 0px;
+    }
+    .barra-nav{
+        padding: 0;
     }
     .barra-nav button{
-        margin-left: 10px;
+        margin-left: 7px;
+    }
+}
+/* Extra pequeño (para teléfonos móviles muy pequeños) */
+@media only screen and (max-width: 320px) {
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-collapse{
+        background-color: rgb(220, 220, 220);
+        padding: 5px 0px;
+    }
+    .barra-nav{
+        padding: 0;
+    }
+    .barra-nav button{
+        margin-left: 7px;
     }
 }
 /* Titulo Principal */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 38%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 35%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 28%;
+    }
+}
+@media screen and (max-width: 600px) {
     .sect-sec{
         height: auto;
     }
@@ -288,10 +333,10 @@ footer img{
         font-size: 75px;
     }
     .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 25%;
+        width: 20%;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
     .sect-sec{
         height: auto;
     }
@@ -307,10 +352,10 @@ footer img{
         font-size: 55px;
     }
     .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 15%;
+        width: 20%;
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
     .sect-sec{
         height: auto;
     }
@@ -329,6 +374,36 @@ footer img{
         width: 15%;
     }
 }
+/* Seccion */
+@media screen and (max-width: 1200px) {
+    .sect-sec .row {
+        height: 600px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .sect-sec .row .contenedor-img {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sect-sec .row .contenedor-img {
+        display: none;
+    }
+}
+@media screen and (max-width: 480px) {
+    .sect-sec .row {
+        height: auto;
+    }
+}
+@media screen and (max-width: 320px) {
+    .sect-sec .row {
+        height: auto;
+    }
+}
+
+
+
+
 /* Footer */
 /* Smartphone Grande */
 @media screen and (max-width: 720px) {

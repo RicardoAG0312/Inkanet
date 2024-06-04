@@ -36,6 +36,6 @@ let cambiarSeccion = () => {
     botones[contador].classList.add('seleccionado');
     contador = (contador + 1) % secciones.length;
 };
-setInterval(cambiarSeccion, 1000);
+setInterval(cambiarSeccion, 3000);
 
 

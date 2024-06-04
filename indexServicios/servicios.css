@@ -438,27 +438,52 @@ footer img{
     }
 }
 /* Titulo Principal */
-@media screen and (max-width: 720px) {
+/* Extra grande (para pantallas grandes) */
+@media only screen and (min-width: 1201px) {
+}
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
     .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 10%;
+        width: 22%;
+    }
+}
+/* Medio grande (para tabletas en paisaje y algunos ordenadores de escritorio) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 15%;
+    }
+}
+/* Medio (para retratos de tabletas y teléfonos móviles grandes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 12%;
     }
     .titulo-principal{
         font-size: 55px;
         padding-top: 15px;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
     .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 12%;
+        width: 5%;
     }
     .titulo-principal{
-        font-size: 28px;
+        font-size: 55px;
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .titulo-con-lineas::before, .titulo-con-lineas::after {
+        width: 8%;
+    }
+    .titulo-principal{
+        font-size: 40px;
         padding-top: 10px;
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
     .titulo-con-lineas::before, .titulo-con-lineas::after {
-        width: 8%;
+        width: 5%;
     }
     .titulo-principal{
         font-size: 30px;
@@ -527,7 +552,10 @@ footer img{
     }
 }
 /* Beneficios */
-@media screen and (max-width: 720px) {
+/* Grande (para ordenadores de escritorio grandes) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
     .titulo-beneficios{
         font-size: 70px;
     }
@@ -540,21 +568,22 @@ footer img{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
     }
     .sect-beneficios .card{
-        width: 100%;
+        width: 30%;
+        min-height: 700px;
+        max-height: 700px;
     }
     .sect-beneficios .card-title{
-        font-size: 70px;
+        font-size: 30px;
     }
     .sect-beneficios .card-text{
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 18px;
+        line-height: 22px;
     }
 
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .titulo-beneficios{
         font-size: 35px;
     }
@@ -580,6 +609,12 @@ footer img{
         height: 50%;
     }
 }
+
+
+
+
+
+
 /* Seccion Caracteristicas */
 @media screen and (max-width: 720px) {
     .titulo-beneficios{
@@ -766,3 +801,10 @@ footer img{
         height: 100px;
     }
 }
+
+
+
+
+
+
+
